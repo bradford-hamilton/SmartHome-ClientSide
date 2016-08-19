@@ -1,0 +1,39 @@
+<div class="home">
+
+  <div class="btns">
+    <button class="bigbtn notSelected"
+      ng-click="isLoginOpen = !isLoginOpen; isSignupOpen = false">
+      Login
+    </button>
+    <button class="bigbtn notSelected"
+      ng-click="isSignupOpen = !isSignupOpen; isLoginOpen = false">
+      Signup
+    </button>
+  </div>
+
+  <form ng-show="isLoginOpen" name="loginForm" ng-submit="loginUser(username, password)">
+    <center>Login</center>
+    <label for="username"> Username </label>
+      <input type="text" name="username" ng-model="username">
+    <label for="password"> Password </label>
+      <input type="password" name="password" ng-model="password">
+    <button type="password"> Login </button>
+  </form>
+
+  <form ng-show="isSignupOpen" novalidate name="SignupForm" ng-submit="addUser(username, password, zip)">
+    <center>Signup</center>
+    <label for="username"> Username </label>
+      <input type="text" id="username" ng-model="username">
+    <label for="password"> Password </label>
+      <input type="password" id="password" ng-model="password">
+    <label for="zip"> Zip Code </label>
+      <input type="number" id="zip" ng-model="zip">
+    <button type="submit"> Submit </button>
+  </form>
+
+  <section class="description">
+    <p>SmartHome is a home automation app.  Features include the current temperature inside your home and right outside your house, monitors your open doors, includes alerts if you’ve left a door open, and looks to the weather forecast to advise you whether you need to water your lawn based on the upcoming weather forecast.<br><br>
+    On the dashboard, users can see the temperature readings, status of their doors and any alerts.  Users can set a time limit for how long their door can be open before receiving an alert.  This is great for the forgetful person who leaves the garage door open.</p>
+  </section>
+
+</div>

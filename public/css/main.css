@@ -1,0 +1,189 @@
+@import "https://fonts.googleapis.com/css?family=Roboto+Mono";
+.card, .modules section, .weather .days, .home .description {
+  border-radius: 3px;
+  border: 5px #edae49 solid; }
+
+.btn, .data button, .home form button {
+  color: #fafafa;
+  background-color: #30638e;
+  font-weight: bold;
+  border: 0;
+  padding: .5vw;
+  border-radius: 3px; }
+  .btn:hover, .data button:hover, .home form button:hover {
+    color: #072638;
+    background-color: #36bcd0; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  background-color: #072638; }
+
+header {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  color: auto;
+  background-color: #fafafa;
+  border-bottom: solid #edae49 5px;
+  font-family: 'Roboto Mono', monospace; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-items: flex-end; }
+  nav .brand {
+    display: flex;
+    align-items: center;
+    margin: 0.5vw 0.5vw 0.5vw 0; }
+    nav .brand .logo {
+      height: 5vw;
+      width: 5vw; }
+    nav .brand h1 {
+      color: #36bcd0;
+      padding-left: 1vw;
+      margin: 0; }
+
+a {
+  text-decoration: none;
+  color: #36bcd0; }
+  a:hover {
+    color: #edae49; }
+
+main {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  color: #fafafa;
+  background-color: #072638;
+  border-top: #30638e 20px solid; }
+
+.dashboard {
+  width: 80%; }
+  .dashboard h1 {
+    font-family: 'Roboto Mono', monospace;
+    margin: 1vw 0; }
+
+.modules {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap; }
+  .modules section {
+    color: auto;
+    background-color: #fafafa;
+    width: 17rem;
+    padding: 1vw;
+    margin: 1vw 0 1vw 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .modules section h2, .modules section h4 {
+      font-size: 1.5rem;
+      color: #30638e;
+      margin-top: .5vw; }
+
+i {
+  color: #edae49; }
+
+.alert {
+  color: #072638;
+  background-color: #fafafa;
+  border: 10px #d13a4e solid;
+  border-radius: 3px;
+  padding: 1vw 1vw 1vw 1vw; }
+  .alert h2 {
+    color: #d13a4e;
+    margin-top: 0; }
+
+.data {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column; }
+  .data p {
+    font-size: 3rem;
+    font-family: 'Roboto Mono', monospace;
+    margin: auto;
+    padding: 1vw;
+    color: #36bcd0; }
+  .data .hidden {
+    display: none; }
+  .data .precip {
+    align-self: flex-end;
+    font-family: sans-serif;
+    font-size: 1vw;
+    padding: 0;
+    color: #30638e; }
+  .data button {
+    font-weight: normal;
+    outline: none; }
+
+.weather {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  border-radius: 3px; }
+  .weather .days {
+    color: #072638;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 11vw;
+    border: #36bcd0 solid 3px;
+    margin: 1vw 0;
+    padding: 1vw; }
+    .weather .days h3 {
+      margin-bottom: 0; }
+    .weather .days img {
+      margin-top: 1vw; }
+
+.home {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  flex-direction: column;
+  align-items: center; }
+  .home form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    color: #2e3e42;
+    background-color: #fafafa;
+    margin: 0 0 2vw 0;
+    padding: 1vw;
+    border-radius: 3px; }
+    .home form input, .home form button {
+      margin-bottom: 1vw;
+      border-radius: 3px; }
+  .home .description {
+    width: 100%;
+    color: #2e3e42;
+    background-color: #fafafa;
+    padding: 1vw;
+    margin: 0 0 5vw 0; }
+
+.btns {
+  display: flex;
+  justify-content: center;
+  width: 80%; }
+  .btns .bigbtn {
+    color: #fafafa;
+    background-color: #30638e;
+    width: 200px;
+    padding: 20px;
+    margin: 2vw 1vw;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    border: 0;
+    border-radius: 3px; }
+    .btns .bigbtn:hover {
+      color: black;
+      background-color: #36bcd0; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,59 @@
+<div class="dashboard">
+  <h1>Hello, {{user}}</h1>
+  <!-- <section class="alert">
+    <h2>Alerts</h2>
+  </section> -->
+  <div class="modules">
+    <section>
+      <i class="fa fa-sun-o fa-4x" aria-hidden="true"></i>
+      <h4>Room Temp:</h4>
+      <div class="data">
+        <p ng-show="!Cshowing">{{data4.temperature}}°C</p>
+        <p ng-show="Cshowing">{{data.temperature | number:0}}°F</p>
+        <button  ng-click="Cshowing = !Cshowing">
+          <span ng-show="!Cshowing"> Fahrenheit </span>
+          <span ng-show="Cshowing"> Celsius </span>
+        </button>
+      </div>
+    </section>
+    <section>
+      <i class="fa fa-car fa-4x" aria-hidden="true"></i>
+      <h4>Garage Door:</h4>
+      <div class="data">
+        <p>{{data2.doors}}</p>
+      </div>
+    </section>
+    <section>
+      <i class="fa fa-lightbulb-o fa-4x" aria-hidden="true"></i>
+      <h4>Motion Light</h4>
+      <div class="data">
+        <p ng-class="{hidden: data3.value >= 10}">on</p>
+        <p ng-class="{hidden: data3.value < 10}">off</p>
+      </div>
+    </section>
+    <section>
+      <i class="fa fa-tint fa-4x" aria-hidden="true"></i>
+      <h4>Sprinklers:</h4>
+      <div class="data">
+        <p ng-show="water">on</p>
+        <p ng-show="!water">off</p>
+        <span class="precip-container">
+          <!-- <p class="precip">Upcoming Precipitation: {{twoDayPrecip}}</p> -->
+        </span>
+      </div>
+    </section>
+  </div>
+  <h1>Forecast for {{zip}}</h1>
+  <section class="weather">
+    <div ng-repeat='weather in weatherData' class="days">
+      <h2>{{ weather.validTime | date:'EEEE' }}</h2>
+      <h3 ng-show="Cshowing">High: {{ weather.maxTempF }}°F </h3>
+      <h3 ng-show="!Cshowing">High: {{ weather.maxTempC }}°C </h3>
+      <h3 ng-show="Cshowing">Low: {{ weather.minTempF }}°F </h3>
+      <h3 ng-show="!Cshowing">Low: {{ weather.minTempC }}°C </h3>
+      <h3>Precip: {{ weather.precipIN }}"</h3>
+      <img ng-src="../images/{{weather.icon}}">
+      <p>{{weather.weather}}</p>
+    </di>
+  </section>
+</div>

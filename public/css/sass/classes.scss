@@ -1,0 +1,15 @@
+.card{
+  border-radius: 3px;
+  border: 5px $yellow solid;
+}
+
+.btn{
+  @include colors($white, $slate);
+  font-weight: bold;
+  border: 0;
+  padding: .5vw;
+  border-radius: 3px;
+  &:hover{
+    @include colors($darkblue, $lightblue);
+  }
+}

@@ -1,0 +1,10 @@
+@mixin flex-width($justify, $width){
+  display: flex;
+  justify-content: $justify;
+  width: $width;
+}
+
+@mixin colors($color, $background){
+  color: $color;
+  background-color: $background;
+}
